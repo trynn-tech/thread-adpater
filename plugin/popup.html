@@ -1,0 +1,64 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 220px;
+      padding: 12px;
+      font-family: monospace;
+      background-color: #1a1a24;
+      color: #a9b1d6;
+      margin: 0;
+    }
+    .header {
+      font-size: 11px;
+      color: #7aa2f7;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #2f3549;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .status-box {
+      background: #24283b;
+      border: 1px solid #414868;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+    .accent { color: #9ece6a; }
+    .warning { color: #f7768e; }
+    button {
+      width: 100%;
+      background: #414868;
+      border: 1px solid #565f89;
+      color: #c0caf5;
+      padding: 6px;
+      font-family: monospace;
+      font-size: 11px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+    }
+    button:hover {
+      background: #7aa2f7;
+      color: #1a1a24;
+      font-weight: bold;
+    }
+    button:active { transform: scale(0.98); }
+  </style>
+</head>
+<body>
+  <div class="header">🔮 Yuko ExoCognition</div>
+  <div class="status-box">
+    <div>Target Tab: <span id="tab-display" class="warning">UNLOCKED</span></div>
+    <div style="margin-top: 4px; font-size: 10px; color: #565f89;" id="url-display">None</div>
+  </div>
+  <button id="secure-btn">🔒 SECURE CURRENT TAB</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
