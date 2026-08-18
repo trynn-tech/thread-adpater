@@ -1,17 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Yuko ExoCognition",
-  "version": "2.4",
+  "version": "2.5",
   "description": "Browser to Local chat marshalling framework",
   "permissions": [
     "activeTab",
     "storage"
   ],
   "host_permissions": [
-    "http://127.0.0.1:9091/*"
+    "http://127.0.0.1:8000/*"
   ],
-  "action": {
-    "default_title": "Yuko ExoSynthetic Thinking",
+  "action": {    "default_title": "Yuko ExoSynthetic Thinking",
     "default_popup": "popup.html"
   },
   "background": {
